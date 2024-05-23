@@ -1,0 +1,163 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.introduction-section {
+    background-color: aqua;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+    .introduction-section h1 {
+        font-size: 40px;
+        color: #722424;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .introduction-section .container p {
+        line-height: 1.6;
+        text-align: center;
+        padding: 10px;
+    }
+
+.skills-section {
+    background-color: red;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+    .skills-section h1 {
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .skills-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .skills-section ul li {
+            display: inline-block;
+            width: 30%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #722424;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+            border: solid 1px black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.5s, color 0.5s;
+        }
+
+            .skills-section ul li:hover {
+                background-color: #230996;
+                color: #fff;
+            }
+
+.contact-section {
+    background-color: #878d8dd5;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+    .contact-section h1 {
+        font-size: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .contact-section p {
+        font-size: 20px;
+    }
+
+    .contact-section a {
+        text-decoration: none;
+        color: #814040;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .contact-section a:hover {
+            color: #fe004a;
+        }
+
+    .contact-section p i {
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+    .social-icons ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-icons li {
+        margin: 10px;
+    }
+
+    .social-icons a {
+        font-size: 30px;
+        color: #ff004f;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-section ul li {
+        width: 45%;
+    }
+
+    .social-icons a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section ul li {
+        width: 100%;
+    }
+
+    .contact-section h1,
+    .skills-section h1,
+    .introduction-section h1 {
+        font-size: 30px;
+    }
+
+    header {
+        font-size: 24px;
+    }
+}
